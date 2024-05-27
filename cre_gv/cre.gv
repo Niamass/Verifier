@@ -1,0 +1,20 @@
+digraph CRE {
+    start [label=CRE shape=plaintext]
+    A [label=name shape=diamond]
+    D [label=BRACKETS shape=box]
+    E [label=TSEITIN_ITERATION shape=box]
+    F [label="," shape=oval]
+    end [label="" shape=point]
+    start -> A
+    start -> D
+    start -> E
+    A -> F
+    D -> F
+    E -> F
+    A -> end
+    D -> end
+    E -> end
+    F -> A
+    F -> D
+    F -> E
+}

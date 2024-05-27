@@ -1,0 +1,16 @@
+digraph ACTIONS {
+    start [label=ACTIONS shape=plaintext]
+    A [label=CALL shape=box]
+    B [label=ASSIGNMENT shape=box]
+    C [label=";" shape=oval]
+    end [label="" shape=point]
+    start -> A
+    start -> end
+    start -> B
+    A -> C
+    B -> C
+    C -> A
+    C -> B
+    A -> end
+    B -> end
+}

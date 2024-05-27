@@ -1,0 +1,50 @@
+digraph EXPRESSION {
+    start [label=EXPRESSION shape=plaintext]
+    A [label=number shape=diamond]
+    B [label=name shape=diamond]
+    C [label="!" shape=oval]
+    D [label=EXPRESSION shape=box]
+    E [label="(" shape=oval]
+    F [label=EXPRESSION shape=box]
+    G [label=")" shape=oval]
+    H [label=EXPRESSION shape=box]
+    I [label="+" shape=oval]
+    J [label="-" shape=oval]
+    K [label="*" shape=oval]
+    L [label="/" shape=oval]
+    M [label="&" shape=oval]
+    N [label="|" shape=oval]
+    O [label="=" shape=oval]
+    P [label=EXPRESSION shape=box]
+    end [label="" shape=point]
+    start -> A
+    start -> B
+    start -> C
+    start -> E
+    start -> H
+
+    C -> D
+    E -> F
+    F -> G
+
+    H -> I
+    H -> J
+    H -> K
+    H -> L
+    H -> M
+    H -> N
+    H -> O
+    I -> P
+    J -> P
+    K -> P
+    L -> P
+    M -> P
+    N -> P
+    O -> P
+
+    A -> end
+    B -> end
+    D -> end
+    G -> end
+    P -> end
+}

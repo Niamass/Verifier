@@ -1,0 +1,13 @@
+{
+    "syntax": {
+        "type": "virt",
+        "info": {
+            "supportInfo": "dsl_info_cre",
+            "diagrams": "cre_gv"
+        }
+    },
+    "semantics": {
+        "type": "cre"
+    },
+    "debugInfoDir": "_debug"
+}
